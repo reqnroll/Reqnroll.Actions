@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFrameworks>net471;netcoreapp2.1</TargetFrameworks>
+	  <NuspecFile>$(MSBuildThisFileDirectory)Reqnroll.Actions.Configuration.Generation.nuspec</NuspecFile>
+	  <AssemblyName>Reqnroll.Actions.Configuration.Generation.ReqnrollPlugin</AssemblyName>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Reqnroll.CustomPlugin" Version="3.9.58" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\Reqnroll.Actions.Configuration\Reqnroll.Actions.Configuration\Reqnroll.Actions.Configuration.csproj">
+			<IncludeInPackage>true</IncludeInPackage>
+		</ProjectReference>
+	</ItemGroup>
+
+</Project>

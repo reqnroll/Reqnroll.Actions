@@ -1,0 +1,27 @@
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <BuildDependsOn>
+      CopyReqnrollActionJsonToOutput;
+      $(BuildDependsOn)
+    </BuildDependsOn>
+    <CleanDependsOn>
+      $(CleanDependsOn)
+    </CleanDependsOn>
+    <RebuildDependsOn>
+      CopyReqnrollActionJsonToOutput;
+      $(RebuildDependsOn)
+    </RebuildDependsOn>
+  </PropertyGroup>
+
+  <Target Name="CopyReqnrollActionJsonToOutput" >
+
+    <PropertyGroup>
+      <ReqnrollActionJson>reqnroll.actions.json</ReqnrollActionJson>
+    </PropertyGroup>
+
+    <ItemGroup Condition="Exists($(ReqnrollActionJson))">
+      <None Include="$(ReqnrollActionJson)" CopyToOutputDirectory="PreserveNewest" />
+    </ItemGroup>
+
+  </Target>
+</Project>

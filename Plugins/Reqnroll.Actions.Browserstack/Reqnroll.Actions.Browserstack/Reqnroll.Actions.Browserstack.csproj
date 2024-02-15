@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>netcoreapp2.1;net471</TargetFrameworks>
+		<AssemblyName>Reqnroll.Actions.Browserstack.ReqnrollPlugin</AssemblyName>
+		<PackageId>Reqnroll.Actions.Browserstack</PackageId>
+		<Product>Reqnroll.Actions.Browserstack</Product>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="BrowserStackLocal" Version="2.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\Reqnroll.Actions.Selenium\Reqnroll.Actions.Selenium\Reqnroll.Actions.Selenium.csproj" PrivateAssets="none"/>
+	</ItemGroup>
+
+</Project>

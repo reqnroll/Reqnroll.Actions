@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFrameworks>net6.0;net471</TargetFrameworks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Reqnroll.Actions.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Reqnroll.Actions.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.11.0" />
+    <PackageReference Include="Reqnroll.Plus.LivingDocPlugin" Version="3.9.57" />
+    <PackageReference Include="Reqnroll.NUnit" Version="3.9.58" />
+    <PackageReference Include="nunit" Version="3.13.2" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.0.0" />
+    <PackageReference Include="FluentAssertions" Version="6.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Reqnroll.Actions.Android\Reqnroll.Actions.Android.csproj" />
+  </ItemGroup>
+
+</Project>

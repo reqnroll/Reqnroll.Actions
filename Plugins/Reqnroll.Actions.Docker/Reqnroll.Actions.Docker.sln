@@ -1,0 +1,78 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reqnroll.Actions.Docker", "Reqnroll.Actions.Docker\Reqnroll.Actions.Docker.csproj", "{EF7B1CE3-3F9F-444C-8660-8F1660F89C50}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{CE61E095-2706-4628-BFFA-1252D822002A}"
+	ProjectSection(SolutionItems) = preProject
+		..\.editorconfig = ..\.editorconfig
+		..\Directory.Build.props = ..\Directory.Build.props
+		..\Directory.Build.targets = ..\Directory.Build.targets
+		..\README.md = ..\README.md
+		..\version.json = ..\version.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dependencies", "Dependencies", "{21904115-8972-4D1D-AF5B-21E8123167E5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reqnroll.Actions.Configuration", "..\Reqnroll.Actions.Configuration\Reqnroll.Actions.Configuration\Reqnroll.Actions.Configuration.csproj", "{093C126B-F253-4EFA-9232-C8A00FD8D5B7}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{9117CE85-3AE3-419D-86DD-E17D0491A83B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reqnroll.Actions.Selenium", "..\Reqnroll.Actions.Selenium\Reqnroll.Actions.Selenium\Reqnroll.Actions.Selenium.csproj", "{5816D422-17C0-4D36-A3B3-B21C6754FE06}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reqnroll.Actions.Docker.IntegrationTests", "Reqnroll.Actions.Docker.IntegrationTests\Reqnroll.Actions.Docker.IntegrationTests.csproj", "{8D3C7C93-72D0-4E25-B2D0-AB0E5A488976}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reqnroll.Actions.Configuration.Generation", "..\Reqnroll.Actions.Configuration\Reqnroll.Actions.Configuration.Generation\Reqnroll.Actions.Configuration.Generation.csproj", "{35979344-CFAD-47E4-B422-1C69BCC79973}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reqnroll.Actions.Configuration.Tests", "..\Reqnroll.Actions.Configuration\Reqnroll.Actions.Configuration.Tests\Reqnroll.Actions.Configuration.Tests.csproj", "{EE3D6D8E-471C-43BB-8F18-3BF358C88F6D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF7B1CE3-3F9F-444C-8660-8F1660F89C50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF7B1CE3-3F9F-444C-8660-8F1660F89C50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF7B1CE3-3F9F-444C-8660-8F1660F89C50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF7B1CE3-3F9F-444C-8660-8F1660F89C50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{093C126B-F253-4EFA-9232-C8A00FD8D5B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{093C126B-F253-4EFA-9232-C8A00FD8D5B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{093C126B-F253-4EFA-9232-C8A00FD8D5B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{093C126B-F253-4EFA-9232-C8A00FD8D5B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9117CE85-3AE3-419D-86DD-E17D0491A83B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9117CE85-3AE3-419D-86DD-E17D0491A83B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9117CE85-3AE3-419D-86DD-E17D0491A83B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9117CE85-3AE3-419D-86DD-E17D0491A83B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5816D422-17C0-4D36-A3B3-B21C6754FE06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5816D422-17C0-4D36-A3B3-B21C6754FE06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5816D422-17C0-4D36-A3B3-B21C6754FE06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5816D422-17C0-4D36-A3B3-B21C6754FE06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D3C7C93-72D0-4E25-B2D0-AB0E5A488976}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D3C7C93-72D0-4E25-B2D0-AB0E5A488976}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D3C7C93-72D0-4E25-B2D0-AB0E5A488976}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D3C7C93-72D0-4E25-B2D0-AB0E5A488976}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35979344-CFAD-47E4-B422-1C69BCC79973}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35979344-CFAD-47E4-B422-1C69BCC79973}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35979344-CFAD-47E4-B422-1C69BCC79973}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35979344-CFAD-47E4-B422-1C69BCC79973}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE3D6D8E-471C-43BB-8F18-3BF358C88F6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE3D6D8E-471C-43BB-8F18-3BF358C88F6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE3D6D8E-471C-43BB-8F18-3BF358C88F6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE3D6D8E-471C-43BB-8F18-3BF358C88F6D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{093C126B-F253-4EFA-9232-C8A00FD8D5B7} = {21904115-8972-4D1D-AF5B-21E8123167E5}
+		{5816D422-17C0-4D36-A3B3-B21C6754FE06} = {21904115-8972-4D1D-AF5B-21E8123167E5}
+		{35979344-CFAD-47E4-B422-1C69BCC79973} = {21904115-8972-4D1D-AF5B-21E8123167E5}
+		{EE3D6D8E-471C-43BB-8F18-3BF358C88F6D} = {21904115-8972-4D1D-AF5B-21E8123167E5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0DAE641E-C0E5-43F3-8D72-E4B539C3A6E8}
+	EndGlobalSection
+EndGlobal

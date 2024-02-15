@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net6.0;net471</TargetFrameworks>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Content Include="Reqnroll.Actions.json">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.11.0" />
+		<PackageReference Include="Reqnroll.Plus.LivingDocPlugin" Version="3.9.57" />
+		<PackageReference Include="Reqnroll.Tools.MsBuild.Generation" Version="3.9.58" />
+		<PackageReference Include="Reqnroll.xUnit" Version="3.9.58" />
+		<PackageReference Include="FluentAssertions" Version="5.10.3" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Reqnroll.Actions.WindowsAppDriver\Reqnroll.Actions.WindowsAppDriver.csproj" />
+	</ItemGroup>
+
+</Project>

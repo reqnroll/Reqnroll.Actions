@@ -1,0 +1,77 @@
+name: Reqnroll.Actions.Browserstack
+
+on: 
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/reqnroll.actions.browserstack.yaml'
+      - 'Plugins/Reqnroll.Actions.Browserstack/**'
+      - 'Plugins/*'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/reqnroll.actions.browserstack.yaml'
+      - 'Plugins/Reqnroll.Actions.Browserstack/**'
+      - 'Plugins/*'
+
+
+jobs:
+  build:
+    runs-on: windows-latest
+    environment: Browserstack
+    env:
+        DOTNET_NOLOGO: true
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      # Authenticates packages to push to GPR
+      - uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '6.0.x' 
+        env:
+          NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      - run: dotnet build Plugins/Reqnroll.Actions.Browserstack/Reqnroll.Actions.Browserstack.sln
+      - run: dotnet test Plugins/Reqnroll.Actions.Browserstack/Reqnroll.Actions.Browserstack.sln --filter Category!=failing
+        env:
+          BROWSERSTACK_USERNAME: ${{secrets.BROWSERSTACK_USERNAME}}
+          BROWSERSTACK_ACCESS_KEY: ${{secrets.BROWSERSTACK_ACCESS_KEY}}
+
+      - name: Create the package
+        run: dotnet pack --configuration Release Plugins/Reqnroll.Actions.Browserstack/Reqnroll.Actions.Browserstack.sln
+
+      - name: Upload NuGet Package to Artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: NuGet-Package
+          path:  |
+            Plugins/Reqnroll.Actions.Browserstack/Reqnroll.Actions.Browserstack/bin/Release/**/*.nupkg
+            Plugins/Reqnroll.Actions.Selenium/Reqnroll.Actions.Selenium/bin/Release/**/*.nupkg
+            Plugins/Reqnroll.Actions.Configuration/Reqnroll.Actions.Configuration.Generation/bin/Release/**/*.nupkg
+            
+
+  release:
+    runs-on: windows-latest
+    env: 
+      DOTNET_NOLOGO: true
+    needs: build
+    environment: NuGet.org
+    if: github.ref == 'refs/heads/main'
+    steps:
+      # Authenticates packages to push to nuget.org.
+      # It's only the way to push a package to nuget.org feed for macOS/Linux machines due to API key config store limitations.
+      - name: Download a single artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: NuGet-Package
+      - uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '6.0.x'
+      - name: Publish the package to nuget.org
+        shell: pwsh
+        env:
+          NUGET_AUTH_TOKEN: ${{ secrets.REQNROLL_ACTIONS_NUGET_TOKEN }}
+        run: dotnet nuget push "**/*.nupkg" -k "$env:NUGET_AUTH_TOKEN" -s "https://api.nuget.org/v3/index.json" --skip-duplicate
+        

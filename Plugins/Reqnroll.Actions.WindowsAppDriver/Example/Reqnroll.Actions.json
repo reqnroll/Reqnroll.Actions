@@ -1,0 +1,9 @@
+{
+  "windowsAppDriver": {
+    "capabilities": {
+      "app": "../../../../ReqnrollCalculator/bin/Debug/net6.0-windows/ReqnrollCalculator.exe"
+    },
+    "WindowsAppDriverPath": "C:/Program Files (x86)/Windows Application Driver/WinAppDriver.exe",
+    "EnableScreenshots": true
+  }
+}

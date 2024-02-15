@@ -1,0 +1,12 @@
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" TreatAsLocalProperty="TaskFolder;TaskAssembly">
+
+	<ItemGroup>
+		<ReqnrollGeneratorPlugins Include="$(_ReqnrollActionsConfigurationGeneratorPluginPath)" />
+		<None Include="$(_ReqnrollActionsConfigurationRuntimePluginPath)" >
+			<Link>%(Filename)%(Extension)</Link>
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<Visible>False</Visible>
+		</None>
+	</ItemGroup>
+
+</Project>
