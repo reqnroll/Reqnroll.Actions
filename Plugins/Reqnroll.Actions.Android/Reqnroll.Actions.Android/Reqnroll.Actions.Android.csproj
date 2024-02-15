@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-	  <TargetFrameworks>netcoreapp2.1;net471</TargetFrameworks>
+	  <TargetFrameworks>net6.0;net471</TargetFrameworks>
 	  <AssemblyName>Reqnroll.Actions.Android.ReqnrollPlugin</AssemblyName>
 	  <PackageId>Reqnroll.Actions.Android</PackageId>
 	  <Product>Reqnroll.Actions.Android</Product>

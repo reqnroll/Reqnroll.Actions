@@ -11,7 +11,7 @@ namespace Reqnroll.Actions.Configuration.Generation
     {
         public void Initialize(GeneratorPluginEvents generatorPluginEvents, GeneratorPluginParameters generatorPluginParameters, UnitTestProviderConfiguration unitTestProviderConfiguration)
         {
-            generatorPluginEvents.CustomizeDependencies += GeneratorPluginEvents_CustomizeDependencies;
+            generatorPluginEvents.CustomizeDependencies += GeneratorPluginEvents_CustomizeDependencies!;
         }
 
         private void GeneratorPluginEvents_CustomizeDependencies(object sender, CustomizeDependenciesEventArgs e)

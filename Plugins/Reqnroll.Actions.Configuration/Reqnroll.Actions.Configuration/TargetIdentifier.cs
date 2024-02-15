@@ -30,7 +30,7 @@ namespace Reqnroll.Actions.Configuration
                 return new List<string>();
             }
 
-            var reqnrollActionPath = Path.GetDirectoryName(reqnrollActionLocation);
+            var reqnrollActionPath = Path.GetDirectoryName(reqnrollActionLocation)!;
 
             var targetConfigurations = Directory.GetFiles(reqnrollActionPath, "reqnroll.actions.*.json", SearchOption.TopDirectoryOnly);
 

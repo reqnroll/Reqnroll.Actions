@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>netcoreapp2.1;net471</TargetFrameworks>
+		<TargetFrameworks>net6.0;net471</TargetFrameworks>
 		<AssemblyName>Reqnroll.Actions.Appium.ReqnrollPlugin</AssemblyName>
 		<PackageId>Reqnroll.Actions.Appium</PackageId>
 		<Product>Reqnroll.Actions.Appium</Product>
@@ -18,7 +18,7 @@
 
 	<ItemGroup>
 	  <PackageReference Include="Appium.WebDriver" Version="4.3.1" />
-	  <PackageReference Include="Reqnroll" Version="3.9.58" />
+	  <PackageReference Include="Reqnroll" Version="1.0.0" />
 	</ItemGroup>
 
 	<ItemGroup>

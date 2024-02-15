@@ -25,7 +25,7 @@ namespace Reqnroll.Actions.WindowsAppDriver
 
             if (path != null)
             {
-                _appDriverProcess = Process.Start(path, _windowsAppDriverConfiguration.WindowsAppDriverPort != null ? _windowsAppDriverConfiguration.WindowsAppDriverPort.ToString() : "");
+                _appDriverProcess = Process.Start(path, _windowsAppDriverConfiguration.WindowsAppDriverPort != null ? _windowsAppDriverConfiguration.WindowsAppDriverPort.ToString()! : "");
             }
         }
 

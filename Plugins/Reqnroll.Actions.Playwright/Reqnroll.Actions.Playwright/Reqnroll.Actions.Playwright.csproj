@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netcoreapp3.1;net471</TargetFrameworks>
+    <TargetFrameworks>net6.0;net471</TargetFrameworks>
     <AssemblyName>Reqnroll.Actions.Playwright.ReqnrollPlugin</AssemblyName>
     <PackageId>Reqnroll.Actions.Playwright</PackageId>
     <Product>Reqnroll.Actions.Playwright</Product>
@@ -10,8 +10,8 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Playwright" Version="1.19.1" />
-    <PackageReference Include="Reqnroll" Version="3.9.58" />
-    <PackageReference Include="System.Text.Json" Version="6.0.1" />
+    <PackageReference Include="Reqnroll" Version="1.0.0" />
+    <PackageReference Include="System.Text.Json" Version="8.0.2" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,13 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-	  <TargetFrameworks>net471;netcoreapp2.1</TargetFrameworks>
+	  <TargetFrameworks>net471;net6.0</TargetFrameworks>
 	  <NuspecFile>$(MSBuildThisFileDirectory)Reqnroll.Actions.Configuration.Generation.nuspec</NuspecFile>
 	  <AssemblyName>Reqnroll.Actions.Configuration.Generation.ReqnrollPlugin</AssemblyName>
   </PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Reqnroll.CustomPlugin" Version="3.9.58" />
+		<PackageReference Include="Reqnroll.CustomPlugin" Version="1.0.0" />
 	</ItemGroup>
 
 	<ItemGroup>

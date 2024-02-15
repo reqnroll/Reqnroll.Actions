@@ -11,7 +11,7 @@ namespace Reqnroll.Actions.Playwright
         public void Initialize(RuntimePluginEvents runtimePluginEvents, RuntimePluginParameters runtimePluginParameters,
             UnitTestProviderConfiguration unitTestProviderConfiguration)
         {
-            runtimePluginEvents.CustomizeScenarioDependencies += RuntimePluginEvents_CustomizeScenarioDependencies;
+            runtimePluginEvents.CustomizeScenarioDependencies += RuntimePluginEvents_CustomizeScenarioDependencies!;
         }
 
         private void RuntimePluginEvents_CustomizeScenarioDependencies(object? sender,

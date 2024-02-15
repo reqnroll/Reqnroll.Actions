@@ -1,6 +1,7 @@
 using Reqnroll.Actions.Configuration;
 using Reqnroll.Plugins;
 using Reqnroll.UnitTestProvider;
+using System;
 
 [assembly:RuntimePlugin(typeof(ConfigurationRuntimePlugin))]
 
@@ -11,8 +12,8 @@ namespace Reqnroll.Actions.Configuration
         public void Initialize(RuntimePluginEvents runtimePluginEvents, RuntimePluginParameters runtimePluginParameters,
             UnitTestProviderConfiguration unitTestProviderConfiguration)
         {
-            runtimePluginEvents.CustomizeScenarioDependencies += RuntimePluginEvents_CustomizeScenarioDependencies;
-            runtimePluginEvents.RegisterGlobalDependencies += RuntimePluginEvents_RegisterGlobalDependencies;
+            runtimePluginEvents.CustomizeScenarioDependencies += RuntimePluginEvents_CustomizeScenarioDependencies!;
+            runtimePluginEvents.RegisterGlobalDependencies += RuntimePluginEvents_RegisterGlobalDependencies!;
         }
 
         private void RuntimePluginEvents_RegisterGlobalDependencies(object sender, RegisterGlobalDependenciesEventArgs e)

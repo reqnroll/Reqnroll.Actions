@@ -25,11 +25,11 @@
 	</Target>
 
 	<PropertyGroup>
-		<_ReqnrollActionsConfigurationGeneratorPluginFramework Condition=" '$(MSBuildRuntimeType)' == 'Core'">netcoreapp2.1</_ReqnrollActionsConfigurationGeneratorPluginFramework>
+		<_ReqnrollActionsConfigurationGeneratorPluginFramework Condition=" '$(MSBuildRuntimeType)' == 'Core'">net6.0</_ReqnrollActionsConfigurationGeneratorPluginFramework>
 		<_ReqnrollActionsConfigurationGeneratorPluginFramework Condition=" '$(MSBuildRuntimeType)' != 'Core'">net471</_ReqnrollActionsConfigurationGeneratorPluginFramework>
 		<_ReqnrollActionsConfigurationGeneratorPluginPath>$(MSBuildThisFileDirectory)\$(_ReqnrollActionsConfigurationGeneratorPluginFramework)\Reqnroll.Actions.Configuration.Generation.ReqnrollPlugin.dll</_ReqnrollActionsConfigurationGeneratorPluginPath>
 
-		<_ReqnrollActionsConfigurationRuntimePluginFramework Condition=" '$(TargetFrameworkIdentifier)' == '.NETCoreApp' ">netcoreapp2.1</_ReqnrollActionsConfigurationRuntimePluginFramework>
+		<_ReqnrollActionsConfigurationRuntimePluginFramework Condition=" '$(TargetFrameworkIdentifier)' == '.NETCoreApp' ">net6.0</_ReqnrollActionsConfigurationRuntimePluginFramework>
 		<_ReqnrollActionsConfigurationRuntimePluginFramework Condition=" '$(TargetFrameworkIdentifier)' == '.NETFramework' ">net471</_ReqnrollActionsConfigurationRuntimePluginFramework>
 		<_ReqnrollActionsConfigurationRuntimePluginPath>$(MSBuildThisFileDirectory)\..\lib\$(_ReqnrollActionsConfigurationRuntimePluginFramework)\Reqnroll.Actions.Configuration.ReqnrollPlugin.dll</_ReqnrollActionsConfigurationRuntimePluginPath>
 	

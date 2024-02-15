@@ -45,7 +45,7 @@ public class LambdaTestDriverInitialiser
 
     public void AddDefaultCapabilities(DriverOptions options)
     {
-        options.TryToAddGlobalCapability("projectName", _testAssemblyProvider.TestAssembly.GetName().Name);
+        options.TryToAddGlobalCapability("projectName", _testAssemblyProvider.TestAssembly.GetName().Name!);
         options.TryToAddGlobalCapability("build", _currentTargetIdentifier.Name ?? "Untitled");
         options.TryToAddGlobalCapability("name", GetScenarioTitle());
     }

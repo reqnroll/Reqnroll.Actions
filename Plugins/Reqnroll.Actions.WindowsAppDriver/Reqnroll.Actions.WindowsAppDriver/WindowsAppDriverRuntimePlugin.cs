@@ -18,15 +18,15 @@ namespace Reqnroll.Actions.WindowsAppDriver
         public void Initialize(RuntimePluginEvents runtimePluginEvents, RuntimePluginParameters runtimePluginParameters,
             UnitTestProviderConfiguration unitTestProviderConfiguration)
         {
-            runtimePluginEvents.RegisterGlobalDependencies += RuntimePluginEvents_RegisterGlobalDependencies;
+            runtimePluginEvents.RegisterGlobalDependencies += RuntimePluginEvents_RegisterGlobalDependencies!;
         }
 
         private void RuntimePluginEvents_RegisterGlobalDependencies(object sender, RegisterGlobalDependenciesEventArgs e)
         {
             var runtimePluginTestExecutionLifecycleEventEmitter = e.ObjectContainer.Resolve<RuntimePluginTestExecutionLifecycleEvents>();
-            runtimePluginTestExecutionLifecycleEventEmitter.BeforeTestRun += RuntimePluginTestExecutionLifecycleEventEmitter_BeforeTestRun;
-            runtimePluginTestExecutionLifecycleEventEmitter.AfterTestRun += RuntimePluginTestExecutionLifecycleEventEmitter_AfterTestRun;
-            runtimePluginTestExecutionLifecycleEventEmitter.AfterStep += RuntimePluginTestExecutionLifecycleEventEmitter_AfterStep;
+            runtimePluginTestExecutionLifecycleEventEmitter.BeforeTestRun += RuntimePluginTestExecutionLifecycleEventEmitter_BeforeTestRun!;
+            runtimePluginTestExecutionLifecycleEventEmitter.AfterTestRun += RuntimePluginTestExecutionLifecycleEventEmitter_AfterTestRun!;
+            runtimePluginTestExecutionLifecycleEventEmitter.AfterStep += RuntimePluginTestExecutionLifecycleEventEmitter_AfterStep!;
 
             e.ObjectContainer.RegisterTypeAs<WindowsAppDriverConfiguration, IWindowsAppDriverConfiguration>();
             e.ObjectContainer.RegisterTypeAs<WindowsAppDriverOptions, IDriverOptions>();
