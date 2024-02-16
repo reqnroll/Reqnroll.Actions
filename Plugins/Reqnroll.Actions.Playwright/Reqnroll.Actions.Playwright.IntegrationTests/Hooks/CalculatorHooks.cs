@@ -22,7 +22,7 @@ namespace Example.Hooks
         ///  Reset the calculator before each scenario tagged with "Calculator"
         /// </summary>
         [BeforeScenario("Calculator")]
-        public async void BeforeScenarioAsync(CalculatorPageObject calculatorPageObject)
+        public async Task BeforeScenarioAsync(CalculatorPageObject calculatorPageObject)
         {
             await calculatorPageObject.EnsureCalculatorIsOpenAndResetAsync();
         }
