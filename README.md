@@ -1,5 +1,7 @@
 # Reqnroll.Actions
 
+*Note: The Reqnroll Actions have been ported from the SpecFlow.Actions package to make the SpecFlow-Reqnroll migration easier as `Reqnroll.SpecFlowCompatibility.Actions.*` (e.g. `Reqnroll.SpecFlowCompatibility.Actions.Selenium`). They might be revised and updated later and moved to Reqnroll.Actions. See related [discussion topic](https://github.com/orgs/reqnroll/discussions/34) for details.*
+
 Reqnroll Actions are our new way to help you all write easier and quicker test automation. They will solve common challenges you encounter during your work of automating an application/API/website/mobile app/microservice/
 
 There will be two kinds of Reqnroll Actions: 
