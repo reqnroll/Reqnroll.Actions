@@ -2,7 +2,7 @@
 
 ## Intermediate plugins
 
-Libraries that are consumed by other plugins and not *nessasarily* intended for direct use inside of your project, but could be useful in some use cases.
+Libraries that are consumed by other plugins and not *necessarily* intended for direct use inside of your project, but could be useful in some use cases.
 
 - [Reqnroll.Actions.Configuration](./Reqnroll.Actions.Configuration)
   - Consumed within the other plugins to handle configuration.
