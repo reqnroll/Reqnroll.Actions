@@ -19,8 +19,7 @@ namespace Reqnroll.Actions.Configuration.Generation
             e.ObjectContainer.RegisterTypeAs<ReqnrollActionJsonLoader, IReqnrollActionJsonLoader>();
             e.ObjectContainer.RegisterTypeAs<ReqnrollActionJsonLocator, IReqnrollActionJsonLocator>();
             e.ObjectContainer.RegisterTypeAs<TargetIdentifier, ITargetIdentifier>();
-            //TODO: the MultiFeatureGeneratorProvider is disabled temporarily to be able to make the code build
-            //e.ObjectContainer.RegisterTypeAs<MultiFeatureGeneratorProvider, IFeatureGeneratorProvider>();
+            e.ObjectContainer.RegisterTypeAs<MultiFeatureGeneratorProvider, IFeatureGeneratorProvider>();
         }
     }
 }
