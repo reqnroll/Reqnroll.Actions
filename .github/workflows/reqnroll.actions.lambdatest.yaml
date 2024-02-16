@@ -7,6 +7,7 @@ on:
     paths:
       - '.github/workflows/reqnroll.actions.lambdatest.yaml'
       - 'Plugins/Reqnroll.Actions.LambdaTest/**'
+      - 'Plugins/Reqnroll.Actions.Configuration/**'
       - 'Plugins/*'
   pull_request:
     branches:
@@ -14,6 +15,7 @@ on:
     paths:
       - '.github/workflows/reqnroll.actions.lambdatest.yaml'
       - 'Plugins/Reqnroll.Actions.LambdaTest/**'
+      - 'Plugins/Reqnroll.Actions.Configuration/**'
       - 'Plugins/*'
 
 
