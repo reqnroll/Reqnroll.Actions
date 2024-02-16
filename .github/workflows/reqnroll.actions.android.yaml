@@ -6,7 +6,7 @@ on:
       - main
     paths:
       - '.github/workflows/reqnroll.actions.android.yaml'
-      - 'Plugins/Reqnroll.Actions.Android/**'
+      - 'Plugins/reqnroll.actions.android/**'
       - 'Plugins/Reqnroll.Actions.Configuration/**'
       - 'Plugins/*'
   pull_request:
