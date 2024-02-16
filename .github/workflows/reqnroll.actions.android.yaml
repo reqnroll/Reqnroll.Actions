@@ -42,7 +42,7 @@ jobs:
         run: nuget restore Plugins/Reqnroll.Actions.Android/Reqnroll.Actions.Android.sln
       
       - name: MSBuild Reqnroll.Actions.Android.sln
-        run: msbuild.exe Plugins/Reqnroll.Actions.Android/Reqnroll.Actions.Android.sln /target:Reqnroll.Actions.Android
+        run: msbuild.exe Plugins/Reqnroll.Actions.Android/Reqnroll.Actions.Android/Reqnroll.Actions.Android.csproj
             
       - name: Create the package
         run: dotnet pack --configuration Release Plugins\Reqnroll.Actions.Android\Reqnroll.Actions.Android\Reqnroll.Actions.Android.csproj
