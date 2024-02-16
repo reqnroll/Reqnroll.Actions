@@ -2,17 +2,11 @@
   "selenium": {
     "defaultTimeout": 60,
     "pollingInterval": 5,
+    "capabilities": {
+    },
     "browserstack": {
       "url": "https://hub-cloud.browserstack.com/wd/hub/"
-    },
+    } 
 
-    // default browser settings:
-    "browser": "Chrome",
-    "capabilities": {
-      "os": "OS X",
-      "os_version": "Sierra",
-      "resolution": "1920x1080",
-      "build": "OS_X_Sierra.Chrome"
-    }
   }
 }
