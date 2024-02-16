@@ -35,6 +35,7 @@ jobs:
           NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
       - run: dotnet build Plugins/Reqnroll.Actions.Browserstack/Reqnroll.Actions.Browserstack.sln
       - run: dotnet test Plugins/Reqnroll.Actions.Browserstack/Reqnroll.Actions.Browserstack.sln --filter Category!=failing
+        if: false  #disabled as we don't have Browserstack API keys
         env:
           BROWSERSTACK_USERNAME: ${{secrets.BROWSERSTACK_USERNAME}}
           BROWSERSTACK_ACCESS_KEY: ${{secrets.BROWSERSTACK_ACCESS_KEY}}
