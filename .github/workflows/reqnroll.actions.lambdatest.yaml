@@ -37,13 +37,15 @@ jobs:
           NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
       - run: dotnet build Plugins/Reqnroll.Actions.LambdaTest/Reqnroll.Actions.LambdaTest.sln
       - run: dotnet test Plugins/Reqnroll.Actions.LambdaTest/Reqnroll.Actions.LambdaTest.sln --filter Category!=failing --logger "trx;logfilename=LambdaTestIntegrationTests.trx"
+        if: false  #disabled as we don't have LambdaTest API keys
         env:
           LT_USERNAME: ${{secrets.LT_USERNAME}}
           LT_ACCESS_KEY: ${{secrets.LT_ACCESS_KEY}}
 
       - name: Upload TRX File
         uses: actions/upload-artifact@v2  # upload test results
-        if: success() || failure()        # run this step even if previous step failed
+        if: false  #disabled as we don't have LambdaTest API keys
+        #if: success() || failure()        # run this step even if previous step failed
         with:
           name: test-results
           path: Plugins/Reqnroll.Actions.LambdaTest/Reqnroll.Actions.LambdaTest.IntegrationTests/TestResults/LambdaTestIntegrationTests.trx
