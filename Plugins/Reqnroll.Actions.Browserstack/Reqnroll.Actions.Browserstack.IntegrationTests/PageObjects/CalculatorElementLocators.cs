@@ -5,7 +5,7 @@ namespace Reqnroll.Actions.Browserstack.IntegrationTests.PageObjects
     public class CalculatorElementLocators
     {
         //The URL of the calculator to be opened in the browser
-        private protected const string CalculatorUrl = "https://reqnrolloss.github.io/Calculator-Demo/Calculator.html";
+        private protected const string CalculatorUrl = "https://specflowoss.github.io/Calculator-Demo/Calculator.html";
 
         //Finding elements by ID
         private protected By FirstNumberFieldLocator => By.Id("first-number");

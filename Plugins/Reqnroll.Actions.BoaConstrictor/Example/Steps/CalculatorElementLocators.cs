@@ -8,7 +8,7 @@ namespace Example.Steps
     public class CalculatorElementLocators
     {
         //The URL of the calculator to be opened in the browser
-        public static string CalculatorUrl = "https://reqnrolloss.github.io/Calculator-Demo/Calculator.html";
+        public static string CalculatorUrl = "https://specflowoss.github.io/Calculator-Demo/Calculator.html";
         public static IWebLocator FirstNumberFieldLocator => L("First number", By.Id("first-number"));
         public static IWebLocator SecondNumberFieldLocator => L("second-number", By.Id("second-number"));
         public static IWebLocator AddButtonLocator => L("add-button", By.Id("add-button"));

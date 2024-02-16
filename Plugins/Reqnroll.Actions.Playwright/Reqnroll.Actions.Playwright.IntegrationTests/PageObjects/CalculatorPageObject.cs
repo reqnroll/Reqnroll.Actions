@@ -9,7 +9,7 @@ namespace Example.PageObjects
     public class CalculatorPageObject : BasePage
     {
         // The page URL
-        private protected const string CalculatorUrl = "https://reqnrolloss.github.io/Calculator-Demo/Calculator.html";
+        private protected const string CalculatorUrl = "https://specflowoss.github.io/Calculator-Demo/Calculator.html";
 
         //Finding elements by ID
         private static string FirstNumberFieldSelector => "#first-number";
