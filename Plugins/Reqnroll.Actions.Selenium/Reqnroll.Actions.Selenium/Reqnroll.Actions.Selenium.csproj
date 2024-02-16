@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFrameworks>net6.0;net471</TargetFrameworks>
     <AssemblyName>Reqnroll.Actions.Selenium.ReqnrollPlugin</AssemblyName>
-    <PackageId>Reqnroll.Actions.Selenium</PackageId>
+    <PackageId>Reqnroll.SpecFlowCompatibility.Actions.Selenium</PackageId>
     <Product>Reqnroll.Actions.Selenium</Product>
     <NuspecFile>$(MSBuildThisFileDirectory)Reqnroll.Actions.Selenium.nuspec</NuspecFile>
   </PropertyGroup>

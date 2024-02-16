@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <Import Project="..\..\Reqnroll.Actions.Configuration\Reqnroll.Actions.Configuration.Generation\Build\Reqnroll.Actions.Configuration.props" />
+  <Import Project="..\..\Reqnroll.Actions.Configuration\Reqnroll.Actions.Configuration.Generation\Build\Reqnroll.SpecFlowCompatibility.Actions.Configuration.props" />
 
   <PropertyGroup>
     <TargetFrameworks>net6.0;net471</TargetFrameworks>

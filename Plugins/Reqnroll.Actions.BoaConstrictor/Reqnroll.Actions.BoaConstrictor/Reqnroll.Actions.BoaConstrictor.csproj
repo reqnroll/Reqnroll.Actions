@@ -4,7 +4,7 @@
     <TargetFrameworks>net6.0;net471</TargetFrameworks>
     <RootNamespace>Reqnroll.Actions.BoaConstrictor</RootNamespace>
     <AssemblyName>Reqnroll.Actions.BoaConstrictor.ReqnrollPlugin</AssemblyName>
-    <PackageId>Reqnroll.Actions.BoaConstrictor</PackageId>
+    <PackageId>Reqnroll.SpecFlowCompatibility.Actions.BoaConstrictor</PackageId>
     <Product>Reqnroll.Actions.BoaConstrictor</Product>
   </PropertyGroup>
 

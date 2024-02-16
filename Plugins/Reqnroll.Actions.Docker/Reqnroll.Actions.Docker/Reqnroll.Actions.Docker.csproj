@@ -3,7 +3,7 @@
 	<PropertyGroup>
 		<TargetFrameworks>net6.0;net471</TargetFrameworks>
 		<AssemblyName>Reqnroll.Actions.Docker.ReqnrollPlugin</AssemblyName>
-		<PackageId>Reqnroll.Actions.Docker</PackageId>
+		<PackageId>Reqnroll.SpecFlowCompatibility.Actions.Docker</PackageId>
 		<Product>Reqnroll.Actions.Docker</Product>
 		<NuspecFile>$(MSBuildThisFileDirectory)Reqnroll.Actions.Docker.nuspec</NuspecFile>
 	</PropertyGroup>

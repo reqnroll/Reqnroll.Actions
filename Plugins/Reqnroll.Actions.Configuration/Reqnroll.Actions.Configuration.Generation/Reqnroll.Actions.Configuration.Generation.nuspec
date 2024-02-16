@@ -1,11 +1,11 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
 	<metadata>
-		<id>Reqnroll.Actions.Configuration</id>
+		<id>Reqnroll.SpecFlowCompatibility.Actions.Configuration</id>
 		<version>$version$</version>
 		<authors>$author$</authors>
 		<owners>$owner$</owners>
-		<title>Reqnroll.Actions.Configuration</title>
-		<description>Reqnroll.Actions.Configuration</description>
+		<title>Reqnroll.SpecFlowCompatibility.Actions.Configuration</title>
+		<description>Reqnroll.SpecFlowCompatibility.Actions.Configuration</description>
 		<summary></summary>
 		<language>en-US</language>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>

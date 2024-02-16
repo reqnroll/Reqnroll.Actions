@@ -3,7 +3,7 @@
 	<PropertyGroup>
 		<TargetFrameworks>net6.0;net471</TargetFrameworks>
 		<AssemblyName>Reqnroll.Actions.Appium.ReqnrollPlugin</AssemblyName>
-		<PackageId>Reqnroll.Actions.Appium</PackageId>
+		<PackageId>Reqnroll.SpecFlowCompatibility.Actions.Appium</PackageId>
 		<Product>Reqnroll.Actions.Appium</Product>
 		<NuspecFile>$(MSBuildThisFileDirectory)Reqnroll.Actions.Appium.nuspec</NuspecFile>
 	</PropertyGroup>

@@ -3,7 +3,7 @@
 	<PropertyGroup>
 		<TargetFrameworks>net6.0;net471</TargetFrameworks>
 		<AssemblyName>Reqnroll.Actions.LambdaTest.ReqnrollPlugin</AssemblyName>
-		<PackageId>Reqnroll.Actions.LambdaTest</PackageId>
+		<PackageId>Reqnroll.SpecFlowCompatibility.Actions.LambdaTest</PackageId>
 		<Product>Reqnroll.Actions.LambdaTest</Product>
 	</PropertyGroup>
 

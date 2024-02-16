@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFrameworks>net6.0;net471</TargetFrameworks>
     <AssemblyName>Reqnroll.Actions.Playwright.ReqnrollPlugin</AssemblyName>
-    <PackageId>Reqnroll.Actions.Playwright</PackageId>
+    <PackageId>Reqnroll.SpecFlowCompatibility.Actions.Playwright</PackageId>
     <Product>Reqnroll.Actions.Playwright</Product>
 	  <NuspecFile>$(MSBuildThisFileDirectory)Reqnroll.Actions.Playwright.nuspec</NuspecFile>
   </PropertyGroup>

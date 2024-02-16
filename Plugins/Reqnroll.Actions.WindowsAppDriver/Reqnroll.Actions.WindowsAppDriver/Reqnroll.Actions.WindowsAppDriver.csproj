@@ -3,7 +3,7 @@
   <PropertyGroup>
 	  <TargetFrameworks>net6.0;net471</TargetFrameworks>
 	  <AssemblyName>Reqnroll.Actions.WindowsAppDriver.ReqnrollPlugin</AssemblyName>
-	  <PackageId>Reqnroll.Actions.WindowsAppDriver</PackageId>
+	  <PackageId>Reqnroll.SpecFlowCompatibility.Actions.WindowsAppDriver</PackageId>
 	  <Product>Reqnroll.Actions.WindowsAppDriver</Product>
     <NuspecFile>$(MSBuildThisFileDirectory)Reqnroll.Actions.WindowsAppDriver.nuspec</NuspecFile>
   </PropertyGroup>

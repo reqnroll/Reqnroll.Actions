@@ -3,7 +3,7 @@
   <PropertyGroup>
 	  <TargetFrameworks>net6.0;net471</TargetFrameworks>
 	  <AssemblyName>Reqnroll.Actions.Android.ReqnrollPlugin</AssemblyName>
-	  <PackageId>Reqnroll.Actions.Android</PackageId>
+	  <PackageId>Reqnroll.SpecFlowCompatibility.Actions.Android</PackageId>
 	  <Product>Reqnroll.Actions.Android</Product>
   </PropertyGroup>
 
