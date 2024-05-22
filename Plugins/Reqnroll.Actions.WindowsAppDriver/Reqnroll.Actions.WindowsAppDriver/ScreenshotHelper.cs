@@ -22,7 +22,7 @@ namespace Reqnroll.Actions.WindowsAppDriver
         {
             if (_enabled)
             {
-                var path = Path.Combine(_testRunContext.GetTestDirectory(), "Screenshots", CurrentDateTime, featureContext.FeatureInfo.Title, scenarioContext.ScenarioInfo.Title);
+                var path = Path.Combine(_testRunContext.TestDirectory, "Screenshots", CurrentDateTime, featureContext.FeatureInfo.Title, scenarioContext.ScenarioInfo.Title);
 
                 if (!Directory.Exists(path))
                 {

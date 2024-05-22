@@ -1,4 +1,4 @@
-using BoDi;
+using Reqnroll.BoDi;
 using System.Collections.Generic;
 using System.Linq;
 using Reqnroll.Configuration;

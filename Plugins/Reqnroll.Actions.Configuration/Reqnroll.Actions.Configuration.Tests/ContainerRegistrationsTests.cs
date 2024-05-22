@@ -1,4 +1,4 @@
-using BoDi;
+using Reqnroll.BoDi;
 using FluentAssertions;
 using Xunit;
 

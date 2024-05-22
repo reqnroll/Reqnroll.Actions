@@ -1,4 +1,4 @@
-using BoDi;
+using Reqnroll.BoDi;
 using Reqnroll.Actions.Selenium;
 using Reqnroll.Actions.Selenium.Configuration;
 using Reqnroll.Actions.Selenium.DriverInitialisers;

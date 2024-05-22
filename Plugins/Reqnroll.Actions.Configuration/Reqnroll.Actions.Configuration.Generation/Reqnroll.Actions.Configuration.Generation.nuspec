@@ -12,12 +12,12 @@
 		<tags>reqnroll</tags>
 		<dependencies>
 			<group targetFramework="net471">
-				<dependency id="Reqnroll" version="1.0.0"/>
+				<dependency id="Reqnroll" version="2.0.0" />
 				<dependency id="Microsoft.Extensions.Configuration.Binder" version="5.0.0" />
 				<dependency id="Microsoft.Extensions.Configuration.Json" version="5.0.0" />
 			</group>
 			<group targetFramework="net6.0">
-				<dependency id="Reqnroll" version="1.0.0"/>
+				<dependency id="Reqnroll" version="2.0.0" />
 				<dependency id="Microsoft.Extensions.Configuration.Binder" version="5.0.0" />
 				<dependency id="Microsoft.Extensions.Configuration.Json" version="5.0.0" />
 			</group>

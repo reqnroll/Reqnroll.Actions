@@ -10,13 +10,13 @@
 			<group targetFramework=".NETFramework4.7.1">
 				<dependency id="Reqnroll.Actions.Configuration" version="$version$" />
 				<dependency id="Microsoft.Playwright" version="1.19.1" />
-				<dependency id="Reqnroll" version="1.0.0" />
+				<dependency id="Reqnroll" version="2.0.0" />
 				<dependency id="System.Text.Json" version="8.0.2" />
 			</group>
 			<group targetFramework=".net6.0">
 				<dependency id="Reqnroll.Actions.Configuration" version="$version$"/>
 				<dependency id="Microsoft.Playwright" version="1.19.1"  />
-				<dependency id="Reqnroll" version="1.0.0" />
+				<dependency id="Reqnroll" version="2.0.0" />
 				<dependency id="System.Text.Json" version="8.0.2" />
 			</group>
 		</dependencies>

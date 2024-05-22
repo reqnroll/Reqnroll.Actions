@@ -10,7 +10,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Playwright" Version="1.19.1" />
-    <PackageReference Include="Reqnroll" Version="1.0.0" />
+    <PackageReference Include="Reqnroll" Version="2.0.0" />
     <PackageReference Include="System.Text.Json" Version="8.0.2" />
   </ItemGroup>
 

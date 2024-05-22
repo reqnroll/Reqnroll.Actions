@@ -1,4 +1,4 @@
-using BoDi;
+using Reqnroll.BoDi;
 using OpenQA.Selenium;
 using Reqnroll.Actions.Browserstack;
 using Reqnroll.Actions.Browserstack.DriverInitialisers;

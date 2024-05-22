@@ -11,13 +11,13 @@
         <dependency id="Reqnroll.Actions.Configuration" version="$version$"/>
         <dependency id="Reqnroll.Actions.Appium" version="$version$"/>
         <dependency id="Appium.WebDriver" version="4.3.1"  />
-        <dependency id="Reqnroll" version="1.0.0" />
+        <dependency id="Reqnroll" version="2.0.0" />
       </group>
       <group targetFramework="net6.0">
         <dependency id="Reqnroll.Actions.Configuration" version="$version$"/>
         <dependency id="Reqnroll.Actions.Appium" version="$version$"/>
         <dependency id="Appium.WebDriver" version="4.3.1" />
-        <dependency id="Reqnroll" version="1.0.0" />
+        <dependency id="Reqnroll" version="2.0.0" />
       </group>
     </dependencies>
   </metadata>
