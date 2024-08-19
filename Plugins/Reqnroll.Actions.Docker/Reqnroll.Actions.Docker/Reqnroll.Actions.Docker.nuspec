@@ -8,12 +8,12 @@
 		<description>Reqnroll aims at bridging the communication gap between domain experts and developers by binding business readable behavior specifications to the underlying implementation. Our mission is to provide a pragmatic and frictionless approach to Acceptance Test Driven Development and Behavior Driven Development for .NET projects today."</description>
 		<dependencies>
 			<group targetFramework=".NETFramework4.7.1">
-				<dependency id="Reqnroll.Actions.Configuration" version="$version$"/>
+				<dependency id="Reqnroll.SpecFlowCompatibility.Actions.Configuration" version="$version$"/>
 				<dependency id="Ductus.FluentDocker" version="2.10.45" />
 				<dependency id="Reqnroll" version="2.0.0" />
 			</group>
 			<group targetFramework="net6.0">
-				<dependency id="Reqnroll.Actions.Configuration" version="$version$"/>
+				<dependency id="Reqnroll.SpecFlowCompatibility.Actions.Configuration" version="$version$"/>
 				<dependency id="Ductus.FluentDocker" version="2.10.45" />
 				<dependency id="Reqnroll" version="2.0.0" />
 			</group>
