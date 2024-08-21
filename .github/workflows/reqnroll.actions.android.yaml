@@ -17,6 +17,7 @@ on:
       - 'Plugins/Reqnroll.Actions.Android/**'
       - 'Plugins/Reqnroll.Actions.Configuration/**'
       - 'Plugins/*'
+  workflow_dispatch:
 
 
 jobs:

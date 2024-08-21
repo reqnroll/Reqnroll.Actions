@@ -15,6 +15,7 @@ on:
       - '.github/workflows/reqnroll.actions.boaconstrictor.yaml'
       - 'Plugins/Reqnroll.Actions.BoaConstrictor/**'
       - 'Plugins/*'
+  workflow_dispatch:
 
 
 jobs:

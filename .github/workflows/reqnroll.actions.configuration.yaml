@@ -15,6 +15,7 @@ on:
       - '.github/workflows/reqnroll.actions.configuration.yaml'
       - 'Plugins/Reqnroll.Actions.Configuration/**'
       - 'Plugins/*'
+  workflow_dispatch:
 
 
 jobs:
