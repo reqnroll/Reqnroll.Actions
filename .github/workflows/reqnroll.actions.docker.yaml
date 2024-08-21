@@ -17,6 +17,7 @@ on:
       - 'Plugins/Reqnroll.Actions.Docker/**'
       - 'Plugins/Reqnroll.Actions.Configuration/**'
       - 'Plugins/*'
+  workflow_dispatch:
 
 
 jobs:
