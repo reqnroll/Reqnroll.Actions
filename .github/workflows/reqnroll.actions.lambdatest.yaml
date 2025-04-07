@@ -69,7 +69,7 @@ jobs:
   #   if: github.ref == 'refs/heads/main'
   #   steps:
   #   - name: Download a single artifact
-  #     uses: actions/download-artifact@v2
+  #     uses: actions/download-artifact@v3
   #     with:
   #       name: test-results
   #   - uses: dorny/test-reporter@v1
@@ -90,9 +90,10 @@ jobs:
       # Authenticates packages to push to nuget.org.
       # It's only the way to push a package to nuget.org feed for macOS/Linux machines due to API key config store limitations.
       - name: Download a single artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: NuGet-Package
+          path: NuGet-Package
       - uses: actions/setup-dotnet@v1
         with:
           dotnet-version: '6.0.x'
