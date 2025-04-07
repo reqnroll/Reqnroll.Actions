@@ -79,26 +79,26 @@ jobs:
   #       path: '*.trx'                     # Path to test results (inside artifact .zip)
   #       reporter: dotnet-trx              # Format of test results       
 
-  # release:
-  #   runs-on: windows-latest
-  #   env: 
-  #     DOTNET_NOLOGO: true
-  #   needs: build
-  #   environment: NuGet.org
-  #   if: github.ref == 'refs/heads/main'
-  #   steps:
-  #     # Authenticates packages to push to nuget.org.
-  #     # It's only the way to push a package to nuget.org feed for macOS/Linux machines due to API key config store limitations.
-  #     - name: Download a single artifact
-  #       uses: actions/download-artifact@v2
-  #       with:
-  #         name: NuGet-Package
-  #     - uses: actions/setup-dotnet@v1
-  #       with:
-  #         dotnet-version: '6.0.x'
-  #     - name: Publish the package to nuget.org
-  #       shell: pwsh
-  #       env:
-  #         NUGET_AUTH_TOKEN: ${{ secrets.REQNROLL_ACTIONS_NUGET_TOKEN }}
-  #       run: dotnet nuget push "**/*.nupkg" -k "$env:NUGET_AUTH_TOKEN" -s "https://api.nuget.org/v3/index.json" --skip-duplicate
+  release:
+    runs-on: windows-latest
+    env: 
+      DOTNET_NOLOGO: true
+    needs: build
+    environment: NuGet.org
+    if: github.ref == 'refs/heads/main'
+    steps:
+      # Authenticates packages to push to nuget.org.
+      # It's only the way to push a package to nuget.org feed for macOS/Linux machines due to API key config store limitations.
+      - name: Download a single artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: NuGet-Package
+      - uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '6.0.x'
+      - name: Publish the package to nuget.org
+        shell: pwsh
+        env:
+          NUGET_AUTH_TOKEN: ${{ secrets.REQNROLL_ACTIONS_NUGET_TOKEN }}
+        run: dotnet nuget push "**/*.nupkg" -k "$env:NUGET_AUTH_TOKEN" -s "https://api.nuget.org/v3/index.json" --skip-duplicate
         
