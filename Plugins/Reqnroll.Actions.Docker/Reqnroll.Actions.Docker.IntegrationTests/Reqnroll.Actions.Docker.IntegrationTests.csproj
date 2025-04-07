@@ -8,7 +8,7 @@
   <ItemGroup>
     <PackageReference Include="FluentAssertions" Version="6.5.1" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.1.0" />
-    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="127.0.6533.11900" />
+    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="134.0.6998.16500" />
     <PackageReference Include="System.Net.Http" Version="4.3.4" />
     <PackageReference Include="xunit" Version="2.6.6" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.5.6">
