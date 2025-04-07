@@ -43,7 +43,7 @@ jobs:
         run: dotnet pack --configuration Release Plugins/Reqnroll.Actions.Selenium/Reqnroll.Actions.Selenium.sln
 
       - name: Upload NuGet Package to Artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: NuGet-Package
           path:  |
