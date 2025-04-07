@@ -65,7 +65,7 @@ jobs:
       # Authenticates packages to push to nuget.org.
       # It's only the way to push a package to nuget.org feed for macOS/Linux machines due to API key config store limitations.
       - name: Download a single artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: NuGet-Package
           path: NuGet-Package
